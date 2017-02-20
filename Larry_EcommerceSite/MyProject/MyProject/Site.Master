@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MyProject.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css' />
+    <link href="Content/slick.css" rel="stylesheet" />
+    <link href="Content/slick-theme.css" rel="stylesheet" />
+    <link href="Content/maincss.css" rel="stylesheet" />
+    <link href="Content/adminCSS.css" rel="stylesheet" />
+    <script src="Content/jquery-1.11.3.js"></script>
+    <script src="Content/slick.min.js"></script>
+    <script src="Content/MainScript.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="logo">
+                <asp:LinkButton ID="btnLogo" runat="server" OnClick="btnLogo_Click" Text="RUNWAY"></asp:LinkButton>
+
+            </div>
+
+        </header>
+        <div class="nav-wrapper">
+            <div class="nav">
+
+                <ul>
+                    <li class="dropdown">
+                        <asp:LinkButton ID="btnmen" runat="server" OnClick="btnmen_Click" Text="Men"></asp:LinkButton>
+                        <ul class="submenu">
+                            <li>
+                                <asp:LinkButton ID="btnMenTop" runat="server" OnClick="btnMenTop_Click" Text="Tops"></asp:LinkButton>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="btnMenBottom" runat="server" OnClick="btnMenBottom_Click" Text="Bottoms"></asp:LinkButton>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="btnMenAccess" runat="server" OnClick="btnMenAccess_Click" Text="Accessories"></asp:LinkButton>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <asp:LinkButton ID="btnwomen" runat="server" OnClick="btnwomen_Click" Text="Women"></asp:LinkButton>
+                        <ul class="submenu">
+                            <li>
+                                <asp:LinkButton ID="btnWomTop" runat="server" OnClick="btnWomTop_Click" Text="Tops"></asp:LinkButton>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="btnWomBottom" runat="server" OnClick="btnWomBottom_Click" Text="Bottoms"></asp:LinkButton>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="btnWomAccess" runat="server" OnClick="btnWomAccess_Click" Text="Accessories"></asp:LinkButton>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <asp:LinkButton ID="linkBtnSale" runat="server" OnClick="btnSale_Click" Text="Sale"></asp:LinkButton>
+                        <ul class="submenu">
+                            <li>
+                                <asp:LinkButton ID="btnSaleMen" runat="server" OnClick="btnSaleMen_Click" Text="Men"></asp:LinkButton>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="btnSaleWomen" runat="server" OnClick="btnSaleWomen_Click" Text="Women"></asp:LinkButton>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <asp:LinkButton ID="linkBtnTrend" runat="server" OnClick="linkBtnTrend_Click" Text="Trending"></asp:LinkButton>
+                        <ul class="submenu">
+                            <li>
+                                <asp:LinkButton ID="btnTrendMen" runat="server" OnClick="btnTrendMen_Click" Text="Men"></asp:LinkButton>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="btnTrendWomen" runat="server" OnClick="btnTrendWomen_Click" Text="Women"></asp:LinkButton>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <label class="lblCart" for="imgCart">My Cart</label>
+                <asp:ImageButton ID="imgCart" CssClass="cartContainer" runat="server" ImageUrl="~/Images/cart11.png" />
+
+                <asp:HyperLink ID="hlUsername" runat="server" Text=" " CssClass="userName" ForeColor="White"></asp:HyperLink>
+                <asp:LinkButton ID="login" runat="server" OnClick="login_Click" Text="Sign In"></asp:LinkButton>
+            </div>
+            <div id="cartMenu">
+                <asp:DataList ID="DataList1" CssClass="dataList" runat="server" OnItemCommand="DataList1_ItemCommand" OnItemDataBound="DataList1_ItemDataBound">
+                    <HeaderTemplate>
+                        Item Count: <asp:Label ID="lblCount" runat="server" Text=""></asp:Label>
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        
+                            <asp:Label ID="cartId" runat="server" CssClass="lblCartId" Text='<%#Eval("CartId") %>'></asp:Label>
+                            <asp:Image ID="imgItem" runat="server" CssClass='cartImg' ImageUrl='<%#Eval("ProductPhoto") %>'></asp:Image>                       
+                            <asp:Label ID="lblName" runat="server" CssClass="cartData1" Text='<%#Eval("ProductName") %>'></asp:Label>                      
+                            <asp:Label ID="lblPrice" runat="server" CssClass="cartData2" Text='<%#Eval("ProductPrice", "{0:C}") %>'></asp:Label>                       
+                            <asp:Label ID="lblQuantity" runat="server" CssClass="cartData3" Text='<%#Eval("Quantity") %>'></asp:Label>                    
+                            <asp:LinkButton ID="btnRemove" runat="server" CssClass="cartData4" Text="Remove Item" CommandName="Remove" />
+                        
+                    </ItemTemplate>
+                    <FooterTemplate>
+                        <p>Cart Total: </p>
+                        <asp:Label ID="lblCartTotal" runat="server" Text=""></asp:Label>
+                    </FooterTemplate>
+
+                </asp:DataList>
+            </div>
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <footer>
+        </footer>
+    </form>
+</body>
+</html>

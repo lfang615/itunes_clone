@@ -1,0 +1,77 @@
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\roslyn\csc.exe
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\roslyn\vbc.exe
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\MyProject.dll.config
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\MyProject.dll
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\MyProject.pdb
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\API_2.0.dll
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\Data.dll
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\EntityFramework.dll
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\API_2.0.pdb
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\Data.pdb
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\EntityFramework.xml
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\obj\Debug\MyProject.dll
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\obj\Debug\MyProject.pdb
+C:\Users\Larry\Documents\Visual Studio 2015\Projects\MyProject\MyProject\obj\Debug\MyProject.csprojResolveAssemblyReference.cache
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\csc.exe
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\vbc.exe
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\MyProject.dll.config
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\MyProject.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\MyProject.pdb
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\API_2.0.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\Data.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\EntityFramework.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\API_2.0.pdb
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\Data.pdb
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\EntityFramework.xml
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\obj\Debug\MyProject.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\MyProject\MyProject\obj\Debug\MyProject.pdb
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\csc.exe
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\vbc.exe
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\MyProject.dll.config
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\MyProject.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\MyProject.pdb
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\API_2.0.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\Data.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\EntityFramework.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\API_2.0.pdb
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\Data.pdb
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\EntityFramework.xml
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\obj\Debug\MyProject.csprojResolveAssemblyReference.cache
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\obj\Debug\MyProject.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\MyProject\MyProject\obj\Debug\MyProject.pdb

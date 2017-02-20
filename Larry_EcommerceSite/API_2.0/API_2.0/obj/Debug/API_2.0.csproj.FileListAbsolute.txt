@@ -1,0 +1,30 @@
+C:\Users\Larry\documents\visual studio 2015\Projects\API_2.0\API_2.0\bin\Debug\API_2.0.dll.config
+C:\Users\Larry\documents\visual studio 2015\Projects\API_2.0\API_2.0\bin\Debug\API_2.0.dll
+C:\Users\Larry\documents\visual studio 2015\Projects\API_2.0\API_2.0\bin\Debug\API_2.0.pdb
+C:\Users\Larry\documents\visual studio 2015\Projects\API_2.0\API_2.0\bin\Debug\Data.dll
+C:\Users\Larry\documents\visual studio 2015\Projects\API_2.0\API_2.0\bin\Debug\EntityFramework.dll
+C:\Users\Larry\documents\visual studio 2015\Projects\API_2.0\API_2.0\bin\Debug\Data.pdb
+C:\Users\Larry\documents\visual studio 2015\Projects\API_2.0\API_2.0\bin\Debug\EntityFramework.xml
+C:\Users\Larry\documents\visual studio 2015\Projects\API_2.0\API_2.0\obj\Debug\API_2.0.csprojResolveAssemblyReference.cache
+C:\Users\Larry\documents\visual studio 2015\Projects\API_2.0\API_2.0\obj\Debug\API_2.0.dll
+C:\Users\Larry\documents\visual studio 2015\Projects\API_2.0\API_2.0\obj\Debug\API_2.0.pdb
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\API_2.0.dll.config
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\API_2.0.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\API_2.0.pdb
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\Data.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\EntityFramework.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\Data.pdb
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\EntityFramework.xml
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\API_2.0\API_2.0\obj\Debug\API_2.0.csprojResolveAssemblyReference.cache
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\API_2.0\API_2.0\obj\Debug\API_2.0.dll
+C:\Users\Newblord\Desktop\Larry_EcommerceSite\API_2.0\API_2.0\obj\Debug\API_2.0.pdb
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\API_2.0.dll.config
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\API_2.0.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\API_2.0.pdb
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\Data.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\EntityFramework.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\Data.pdb
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\API_2.0\API_2.0\bin\Debug\EntityFramework.xml
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\API_2.0\API_2.0\obj\Debug\API_2.0.csprojResolveAssemblyReference.cache
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\API_2.0\API_2.0\obj\Debug\API_2.0.dll
+C:\Users\Larry\Documents\CTClassroomEx\Larry_EcommerceSite\API_2.0\API_2.0\obj\Debug\API_2.0.pdb

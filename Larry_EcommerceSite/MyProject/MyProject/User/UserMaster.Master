@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMaster.master.cs" Inherits="MyProject.User.UserMaster" MasterPageFile="~/Site.Master" %>
+
+
+  
+       <asp:Content ID="mainContent" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
+
+           <div class="main">
+               <div id="leftPanel">
+                   <ul class="navOptions">
+                       <li>
+                           <asp:LinkButton id="btnAccount" runat="server" CssClass="tableLinks" OnClick="btnAccount_Click" Text="Account"></asp:LinkButton>
+                       </li>
+                       <li>
+                           <asp:LinkButton ID="btnAddress" runat="server" CssClass="tableLinks" OnClick="btnAddress_Click" Text="Address"></asp:LinkButton>
+                       </li>
+                       <li>
+                           <asp:LinkButton ID="btnPurchases" runat="server" CssClass="tableLinks" OnClick="btnPurchases_Click" Text="Purchases"></asp:LinkButton>
+                       </li>
+                   </ul>
+               </div>
+
+               <div id="gridContainer">
+                   <asp:ContentPlaceHolder ID="content2" runat="server">
+                           
+                   </asp:ContentPlaceHolder>
+               </div>
+           </div>
+
+       </asp:Content>
+    
+  

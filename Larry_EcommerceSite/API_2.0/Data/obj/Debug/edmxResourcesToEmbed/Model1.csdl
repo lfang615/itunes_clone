@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Genders" EntityType="Model1.Gender" />
+    <EntitySet Name="Customers" EntityType="Model1.Customer" />
+    <EntitySet Name="Products" EntityType="Model1.Product" />
+    <EntitySet Name="ProductTypes" EntityType="Model1.ProductType" />
+    <EntitySet Name="Purchases" EntityType="Model1.Purchase" />
+    <EntitySet Name="Roles" EntityType="Model1.Role" />
+    <EntitySet Name="RoleTypes" EntityType="Model1.RoleType" />
+    <EntitySet Name="Sizes" EntityType="Model1.Size" />
+    <EntitySet Name="Users" EntityType="Model1.User" />
+    <AssociationSet Name="FK_Purchase_Customer" Association="Model1.FK_Purchase_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Purchase" EntitySet="Purchases" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Customer" Association="Model1.FK_User_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductType_Gender" Association="Model1.FK_ProductType_Gender">
+      <End Role="Gender" EntitySet="Genders" />
+      <End Role="ProductType" EntitySet="ProductTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_ProductType" Association="Model1.FK_Product_ProductType">
+      <End Role="ProductType" EntitySet="ProductTypes" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Size_Product" Association="Model1.FK_Size_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Size" EntitySet="Sizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Size_ProductType" Association="Model1.FK_Size_ProductType">
+      <End Role="ProductType" EntitySet="ProductTypes" />
+      <End Role="Size" EntitySet="Sizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Role_RoleType" Association="Model1.FK_Role_RoleType">
+      <End Role="RoleType" EntitySet="RoleTypes" />
+      <End Role="Role" EntitySet="Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Role_User" Association="Model1.FK_Role_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Role" EntitySet="Roles" />
+    </AssociationSet>
+    <EntitySet Name="Carts" EntityType="Model1.Cart" />
+    <AssociationSet Name="FK_Cart_Customer" Association="Model1.FK_Cart_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Cart" EntitySet="Carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cart_Product" Association="Model1.FK_Cart_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Cart" EntitySet="Carts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Gender">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ProductTypes" Relationship="Model1.FK_ProductType_Gender" FromRole="Gender" ToRole="ProductType" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Birthday" Type="DateTime" Precision="0" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Address1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Zip" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Purchases" Relationship="Model1.FK_Purchase_Customer" FromRole="Customer" ToRole="Purchase" />
+    <NavigationProperty Name="Users" Relationship="Model1.FK_User_Customer" FromRole="Customer" ToRole="User" />
+    <NavigationProperty Name="Carts" Relationship="Model1.FK_Cart_Customer" FromRole="Customer" ToRole="Cart" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="UPC_Code" Type="Int32" />
+    <Property Name="AmountSold" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Revenue" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ProductTypeId" Type="Int32" />
+    <Property Name="Photo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ProductType" Relationship="Model1.FK_Product_ProductType" FromRole="Product" ToRole="ProductType" />
+    <NavigationProperty Name="Sizes" Relationship="Model1.FK_Size_Product" FromRole="Product" ToRole="Size" />
+    <NavigationProperty Name="Carts" Relationship="Model1.FK_Cart_Product" FromRole="Product" ToRole="Cart" />
+  </EntityType>
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="GenderId" Type="Int32" />
+    <NavigationProperty Name="Gender" Relationship="Model1.FK_ProductType_Gender" FromRole="ProductType" ToRole="Gender" />
+    <NavigationProperty Name="Products" Relationship="Model1.FK_Product_ProductType" FromRole="ProductType" ToRole="Product" />
+    <NavigationProperty Name="Sizes" Relationship="Model1.FK_Size_ProductType" FromRole="ProductType" ToRole="Size" />
+  </EntityType>
+  <EntityType Name="Purchase">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Amount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="CustomerId" Type="Int32" />
+    <NavigationProperty Name="Customer" Relationship="Model1.FK_Purchase_Customer" FromRole="Purchase" ToRole="Customer" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleTypeId" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+    <NavigationProperty Name="RoleType" Relationship="Model1.FK_Role_RoleType" FromRole="Role" ToRole="RoleType" />
+    <NavigationProperty Name="User" Relationship="Model1.FK_Role_User" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <EntityType Name="RoleType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Roles" Relationship="Model1.FK_Role_RoleType" FromRole="RoleType" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="Size">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Size1" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ProductTypeId" Type="Int32" />
+    <Property Name="ProductId" Type="Int32" />
+    <NavigationProperty Name="Product" Relationship="Model1.FK_Size_Product" FromRole="Size" ToRole="Product" />
+    <NavigationProperty Name="ProductType" Relationship="Model1.FK_Size_ProductType" FromRole="Size" ToRole="ProductType" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FulName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="Salt" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastIp" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SecurityQ1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SecurityQA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SecurityQ2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SecurityA2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerId" Type="Int32" />
+    <NavigationProperty Name="Customer" Relationship="Model1.FK_User_Customer" FromRole="User" ToRole="Customer" />
+    <NavigationProperty Name="Roles" Relationship="Model1.FK_Role_User" FromRole="User" ToRole="Role" />
+  </EntityType>
+  <Association Name="FK_Purchase_Customer">
+    <End Type="Model1.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="Model1.Purchase" Role="Purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Purchase">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Customer">
+    <End Type="Model1.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="Model1.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductType_Gender">
+    <End Type="Model1.Gender" Role="Gender" Multiplicity="0..1" />
+    <End Type="Model1.ProductType" Role="ProductType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductType">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_ProductType">
+    <End Type="Model1.ProductType" Role="ProductType" Multiplicity="0..1" />
+    <End Type="Model1.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Size_Product">
+    <End Type="Model1.Product" Role="Product" Multiplicity="0..1" />
+    <End Type="Model1.Size" Role="Size" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Size">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Size_ProductType">
+    <End Type="Model1.ProductType" Role="ProductType" Multiplicity="0..1" />
+    <End Type="Model1.Size" Role="Size" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Size">
+        <PropertyRef Name="ProductTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Role_RoleType">
+    <End Type="Model1.RoleType" Role="RoleType" Multiplicity="0..1" />
+    <End Type="Model1.Role" Role="Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoleType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Role">
+        <PropertyRef Name="RoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Role_User">
+    <End Type="Model1.User" Role="User" Multiplicity="0..1" />
+    <End Type="Model1.Role" Role="Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Role">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Total" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Customer" Relationship="Model1.FK_Cart_Customer" FromRole="Cart" ToRole="Customer" />
+    <NavigationProperty Name="Product" Relationship="Model1.FK_Cart_Product" FromRole="Cart" ToRole="Product" />
+  </EntityType>
+  <Association Name="FK_Cart_Customer">
+    <End Type="Model1.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="Model1.Cart" Role="Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cart_Product">
+    <End Type="Model1.Product" Role="Product" Multiplicity="0..1" />
+    <End Type="Model1.Cart" Role="Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

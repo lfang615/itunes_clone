@@ -1,0 +1,575 @@
+﻿html, body {
+    min-height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 148px;
+    position: relative;
+    max-width: 1349px;
+    background: #555555;
+}
+
+header {
+    background-color: #111111;
+    height: 148px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#login {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: 943px;
+    top: -38px;
+    width: 75px;
+}
+
+.userName {
+    position: relative;
+    top: -38px;
+    left: 935px;
+    width: 75px;
+}
+
+.main {
+    background-color: #555555;
+    padding-top: 20px;
+}
+
+.nav, .main {
+    position: relative;
+}
+
+.nav-wrapper {
+    height: 52px;
+    width: 1349px;
+}
+
+.nav {
+    background-color: #333333;
+    /*max-width: 100%;*/
+    height: 52px;
+    z-index: 150;
+    box-shadow: 0 4px 6px rgb(51,51,51);
+    width: 1349px;
+}
+
+    .nav ul {
+        margin: 0 auto;
+        list-style-type: none;
+        max-width: 700px;
+        padding: 0;
+        text-align: center;
+    }
+
+        .nav ul li {
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            position: relative;
+            padding: 14px 20px 14px 20px;
+        }
+
+            .nav ul li:hover {
+                background-color: #999999;
+            }
+
+    .nav li ul {
+        position: absolute;
+        top: 52px;
+        left: 0;
+        /*margin: 0;*/
+        background-color: #333333;
+        padding-left: 0;
+    }
+
+    .nav a, .nav span {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav span {
+        cursor: pointer;
+    }
+
+    .nav li li {
+        position: relative;
+        margin: 0;
+        display: block;
+        /*border-bottom: solid 1px #111111;*/
+        text-align: left;
+    }
+
+        .nav li li:last-child {
+            border-bottom: none;
+        }
+
+ul .submenu {
+    display: none;
+}
+
+.cartContainer {
+    position: relative;
+    height: 21px;
+    left: 1229px;
+    top: -34px;
+}
+
+.lblCart {
+    position: relative;
+    left: 1226px;
+    top: -38px;
+    color: white;
+}
+
+.logo {
+    margin: auto;
+    max-width: 700px;
+    padding: 50px;
+}
+
+#btnLogo {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    height: 252px;
+    width: 170px;
+}
+
+.itemContainer {
+    display: inline-block;
+    padding: 35px;
+    width: 220px;
+    font-family: 'Roboto', sans-serif;
+    height: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.mainTemplate {
+    width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+
+.qvContainItem {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.qvContainer {
+    position: absolute;
+    width: 200px;
+}
+
+.qv {
+    position: absolute;
+    background-color: #333333;
+    width: 90px;
+    padding: 11px;
+    text-align: center;
+    top: 225px;
+    left: 80px;
+    display: none;
+}
+
+    .qv:hover {
+        background-color: #999999;
+    }
+
+.btnClassQV {
+    text-decoration: none;
+    color: white;
+    display: none;
+}
+
+
+.overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+.popupMain {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 550px;
+    height: 425px;
+    margin-left: -253px;
+    margin-top: -190px;
+    background-color: white;
+    z-index: 200;
+    outline: 9999px solid rgba(0,0,0,0.5);
+    font-family: "Roboto", sans-serif;
+}
+
+/*popup window styling*/
+.nameItem {
+    position: absolute;
+    top: 50px;
+    left: 282px;
+    width: 250px;
+    font-size: 20px;
+}
+
+.priceItem1 {
+    position: absolute;
+    top: 105px;
+    left: 282px;
+}
+
+.picItem1 {
+    height: 300px;
+    width: 230px;
+    position: absolute;
+    top: 56px;
+    left: 8px;
+}
+
+.btnClose {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: -6px;
+    right: -7px;
+    cursor: pointer;
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+}
+
+.slick-dots li button::before {
+    font-size: 9px;
+}
+
+.slick-slide {
+    text-align: center;
+}
+
+.slide {
+    width: 100%;
+    height: 500px;
+}
+
+.ddlSorting {
+    border: 1px solid #333333;
+    font-family: "Roboto", sans-serif;
+}
+
+.ddlFilter {
+    float: right;
+    position: relative;
+    top: 9px;
+    right: 45px;
+}
+
+    .ddlFilter label {
+        color: white;
+    }
+
+.imgLinkItem {
+    display: inline-block;
+    padding: 20px;
+}
+
+.Links {
+    height: 220px;
+}
+
+.imgLinks {
+    position: relative;
+    left: 143px;
+    width: 1090px;
+}
+
+    .imgLinks :last-child {
+        padding-right: 0;
+    }
+
+.loginForm {
+    color: white;
+    position: relative;
+    left: 250px;
+}
+
+.userInfo {
+    margin-bottom: 7px;
+}
+
+.txtInfo {
+    width: 235px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.loginHeader {
+    font-size: 30px;
+}
+
+.btnLog1 {
+    background-color: black;
+    position: relative;
+    top: 26px;
+    padding: 10px 35px;
+    text-align: center;
+    border-radius: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+    .btnLog1:hover {
+        background-color: #999999;
+    }
+
+.registerForm {
+    position: relative;
+    left: 750px;
+    bottom: 234px;
+    color: white;
+    width: 367px;
+}
+
+.formContainer {
+    max-width: 900px;
+    padding-left: 43px;
+    margin: 0;
+}
+
+.addNew {
+    background-color: #333333;
+    padding: 10px 35px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+    .addNew:hover {
+        background-color: black;
+    }
+
+#trendingItems {
+    margin-top: 20px;
+}
+
+.trendContainer {
+    display: inline-block;
+    padding-right: 48px;
+    width: 165px;
+    font-family: 'Roboto', sans-serif;
+    height: 335px;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.mainTrendTemplate {
+    width: 1087px;
+    margin: 0 auto;
+    color: white;
+    padding-left: 75px;
+    padding-top: 15px;
+}
+
+#logoTrend {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+hr {
+    width: 240px;
+}
+
+.popupItem {
+    padding-bottom: 5px;
+}
+
+.qvHome {
+    position: absolute;
+    background-color: #333333;
+    width: 90px;
+    padding: 11px;
+    text-align: center;
+    top: 195px;
+    left: 30px;
+    display: none;
+}
+
+    .qvHome:hover {
+        background-color: #999999;
+    }
+
+.btnPopupView {
+    text-decoration: none;
+    color: white;
+}
+
+.quantitySelect {
+    position: absolute;
+    top: 186px;
+    right: 220px;
+    border: 2px solid #999999;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+}
+
+.lblQuantity {
+    position: relative;
+    top: 161px;
+    left: 282px;
+}
+
+.btnCart {
+    background-color: #333333;
+    width: 90px;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 180px;
+    left: 322px;
+    font-size: 16px;
+}
+
+    .btnCart:hover {
+        background-color: #999999;
+    }
+
+.imgLinkItem:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.lblLinks {
+    display: inline-block;
+    position: relative;
+}
+
+#lblSale {
+    position: relative;
+    bottom: 201px;
+    font-size: 35px;
+    right: -96px;
+    color: white;
+    font-style: italic;
+}
+
+#lblShopAll {
+    position: relative;
+    bottom: 201px;
+    left: 307px;
+    font-size: 35px;
+    color: white;
+    font-style: italic;
+}
+
+#lblTrend {
+    position: relative;
+    bottom: 201px;
+    right: -487px;
+    color: white;
+    font-size: 35px;
+    font-style: italic;
+}
+
+#cartMenu {
+
+    width: 227px;
+    background-color: #999999;
+    z-index: 1500;
+    position: fixed;
+    left: 1119px;
+    top: 205px;
+    display: none;
+}
+
+.itemIdHidden {
+    display: none;
+}
+
+.idItem {
+    display: none;
+}
+
+.cartImg {
+    height: 75px;
+    width: 60px;
+}
+
+.dataList {
+    background-color: #999999;
+}
+
+.cartData1 {
+    font-size: 13px;
+    position: absolute;
+}
+
+.cartData2 {
+    font-size: 13px;
+    position: relative;
+    top: -4px;
+}
+
+.cartData3 {
+    font-size: 13px;
+    position: relative;
+    top: -30px;
+    left: 0;
+}
+
+.cartData4 {
+    background-color: #333333;
+    width: 100px;
+    padding: 5px;
+    display: block;
+    position: relative;
+    text-align: center;
+    left: 70px;
+    font-family: Roboto, sans-serif;
+    height: 18px;
+    font-size: 14px;
+    border: none;
+    color:white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.dataList tbody {
+    background-color: #999999;
+}
+
+.lblCartId{
+    display: none; 
+
+}

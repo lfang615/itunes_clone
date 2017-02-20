@@ -1,0 +1,47 @@
+﻿
+.navOptions {
+    list-style-type: none;
+    padding-top: 35px;
+    padding-left: 7px;
+    height: 347px;
+    width: 150px;
+    background-color: #333333;
+}
+
+    .navOptions li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 10px;
+    }
+
+    .navOptions li:hover {
+        background-color: #999999;
+    }
+
+    .navOptions li a.active {
+        background-color: #999999;
+    }
+
+tbody {
+    background-color: white;
+}
+
+#leftPanel {
+    position: relative;
+    left: 0;
+    top: 3px;
+}
+
+#gridContainer {
+    position: relative;
+    left: 260px;
+    top: -347px;
+    width: 900px;
+}
+
+#btnContainer {
+    position: absolute;
+    top: 45px;
+    left: 259px;
+}

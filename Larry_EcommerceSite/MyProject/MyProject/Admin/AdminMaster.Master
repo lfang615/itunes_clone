@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="MyProject.AdminMaster" MasterPageFile="~/Site.Master" %>
+
+
+
+
+
+<asp:Content ID="mainContent" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
+    <div class="main">
+        <div id="leftPanel">
+            <ul class="navOptions">
+                <li>
+                    <asp:LinkButton ID="btnProduct" CssClass="tableLinks" Text="Products" runat="server" OnClick="btnProduct_Click"></asp:LinkButton>
+                </li>
+                <li>
+                    <asp:LinkButton ID="btnProductTypes" CssClass="tableLinks" Text="Product Types" runat="server" onclick="btnProductTypes_Click"></asp:LinkButton>
+                </li>
+                <li>
+                    <asp:LinkButton ID="btnCustomer" runat="server" CssClass="tableLinks" Text="Customers" OnClick="btnCustomer_Click"></asp:LinkButton>
+                </li>
+                 <li>
+                    <asp:LinkButton ID="btnCart" runat="server" CssClass="tableLinks" Text="Cart" onclick="btnCart_Click"></asp:LinkButton>
+                </li>
+                <li>
+                    <asp:LinkButton ID="btnPurchase" runat="server" CssClass="tableLinks" Text="Purchases" OnClick="btnPurchase_Click"></asp:LinkButton>
+                </li>
+                <li>
+                    <asp:LinkButton ID="btnUser" runat="server" CssClass="tableLinks" Text="Users" OnClick="btnUser_Click"></asp:LinkButton>
+                </li>
+                <li>
+                    <asp:LinkButton ID="btnRole" runat="server" Text="Roles" OnClick="btnRole_Click"></asp:LinkButton>
+                </li>
+                <li>
+                    <asp:LinkButton ID="btnRoleType" runat="server" Text="Role Types" onclick="btnRoleType_Click"></asp:LinkButton>
+                </li>
+            </ul>
+        </div>
+
+        <div id="btnContainer">
+            <asp:ContentPlaceHolder ID="btnPlaceHolder" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="gridContainer">
+            <asp:ContentPlaceHolder ID="content2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+
+
+
+</asp:Content>
+
+
