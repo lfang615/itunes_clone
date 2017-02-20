@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="content/main.css" rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="header_wrapper">
+        <header>
+            <nav>
+                <ul class="menu clearfix">
+                    <li class="menu_item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="menu_item">
+                        <a>Men</a>
+                    </li>
+                    <li class="menu_item">
+                        <a>Women</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <section class="clearfix">
+        <aside id="filters">
+            <header>
+                <h2>Filter Options</h2>
+            </header>
+            <div class="filter_option">
+                <label for="ddlShoeSize">Shoe Size:</label>
+                <select id="ddlShoeSize">
+                    <option value=" ">--Select--</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>                   
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="filter_option">
+                <h3>Shoe Colors:</h3>
+                <ul class="menu">
+                    <li>
+                        <input id="cbxWhite" type="checkbox" value="White" />
+                        <label for="cbxWhite">White</label>
+                    </li>
+                    <li>
+                        <input id="cbxBlack" type="checkbox" value="Black" />
+                        <label for="cbxBlack">Black</label>
+                    </li>
+                    <li>
+                        <input id="cbxGreen" type="checkbox" value="Pink" />
+                        <label for="cbxGreen">Pink</label>
+                    </li>
+                    <li>
+                        <input id="cbxRed" type="checkbox" value="Red" />
+                        <label for="cbxRed">Red</label>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <article id="main_content">
+            <div class="listview clearfix">
+                <div class="lv_item col-1-4 align-center">
+                    <img class="lv_item_image" src="images/shoe1.jpg" />
+                    <h3 class="lv_item_title">Jordan Retro 2 - Mens</h3>
+                    <h4 class="lv_item_price">$189.99</h4>
+                    <h6 class="lv_item_shoesize hidden">10,10.5,11,11.5,12</h6>                   
+                    <div class="lv_item_overlay">
+                        <img class="lv_item_cart" src="images/cart.png" />
+                    </div>
+                    <h6 class="lv_item_color hidden">Red,Black</h6>
+                </div>
+                <div class="lv_item col-1-4 align-center">
+                    <img class="lv_item_image" src="images/shoe2.jpg" />
+                    <h3 class="lv_item_title">Jordan AJ 1 KO High OG - Mens</h3>
+                    <h4 class="lv_item_price">$139.99</h4>
+                    <h6 class="lv_item_shoesize hidden">11,11.5,12</h6>                   
+                    <div class="lv_item_overlay">
+                        <img class="lv_item_cart" src="images/cart.png" />
+                    </div>
+                    <h6 class="lv_item_color hidden">White,Black</h6>
+                </div>
+                <div class="lv_item col-1-4 align-center">
+                    <img class="lv_item_image" src="images/shoe3.jpg" />
+                    <h3 class="lv_item_title">Nike Air Force 1 High - Men's</h3>
+                    <h4 class="lv_item_price">$119.99</h4>
+                    <h6 class="lv_item_shoesize hidden">8,8.5,9,9.5,10,10.5</h6>                   
+                    <div class="lv_item_overlay">
+                        <img class="lv_item_cart" src="images/cart.png" />
+                    </div>
+                    <h6 class="lv_item_color hidden">Red,White</h6>
+                </div>
+                <div class="lv_item col-1-4 align-center">
+                    <img class="lv_item_image" src="images/shoe4.jpg" />
+                    <h3 class="lv_item_title">Adidas D Rose 6 - Men's</h3>
+                    <h4 class="lv_item_price">$139.99</h4>
+                    <h6 class="lv_item_shoesize hidden">9,9.5,10,10.5,11</h6>                    
+                    <div class="lv_item_overlay">
+                        <img class="lv_item_cart" src="images/cart.png" />
+                    </div>
+                    <h6 class="lv_item_color hidden">Red,Black,White</h6>
+                </div>
+                <div class="lv_item col-1-4 align-center">
+                    <img class="lv_item_image" src="images/shoe5.jpg" />
+                    <h3 class="lv_item_title">Jordan Retro 5 Low - Men's</h3>
+                    <h4 class="lv_item_price">$174.99</h4>
+                    <h6 class="lv_item_shoesize hidden">10,11,12,12.5</h6>                    
+                    <div class="lv_item_overlay">
+                        <img class="lv_item_cart" src="images/cart.png" />
+                    </div>
+                    <h6 class="lv_item_color hidden">Red,Black,White</h6>
+                </div>
+                <div class="lv_item col-1-4 align-center">
+                    <img class="lv_item_image" src="images/shoe6.jpg" />
+                    <h3 class="lv_item_title">Under Armour Curry 2 - Men's</h3>
+                    <h4 class="lv_item_price">$129.99</h4>
+                    <h6 class="lv_item_shoesize hidden">8,9,10,11,12</h6>
+                    <div class="lv_item_overlay">
+                        <img class="lv_item_cart" src="images/cart.png" />
+                    </div>
+                    <h6 class="lv_item_color hidden">Pink,Purple,Blue</h6>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <div id="bgOverlay"></div>
+    <div id="popup" class="align-center">
+        <img class="lv_item_image" src="images/shoe6.jpg" />
+        <h3 class="lv_item_title"></h3>
+        <h4 class="lv_item_price"></h4>
+        <h5 class="lv_item_shoesize hidden"></h5>
+        <!--<h6 class="lv_item_color hidden"></h6>-->
+        <img src="images/close.png" id="btnClose" />
+    </div>
+
+</body>
+</html>

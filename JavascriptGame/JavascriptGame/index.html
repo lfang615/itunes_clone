@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            color: cornflowerblue;
+        }
+
+        #box {
+            width: 80px;
+            height: 80px;
+            background-color: rosybrown;
+            position: relative;
+            display: none;
+        }
+
+        #time {
+            font-weight: bold;
+
+        }
+
+        #score{
+            font-weight: bold;
+        }
+
+        .details{
+            display: inline-block;
+            padding-right: 20px;
+        }
+
+        #container {
+            width: 1200px;
+            height: 650px;
+            border: 8px #0094ff solid;
+        }
+
+       
+    </style>
+
+    <script>
+        window.onload = function () {
+
+            //RandomColor generator function is from stackoverflow
+            function getRandomColor() {
+                var letters = '0123456789ABCDEF'.split('');
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            var createdTime;
+            var clickedTime;
+            var reactionTime;
+
+
+            function appear() {
+
+                //arrays for datasets
+
+                //values for random time in ms
+                var timeArray = [1000, 1500, 2000, 2500, 3000, 3500, 3750, 4000, 4250, 4500];
+
+                //left px's for positioning
+                var leftMovement = [5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 130, 140, 170,
+                    180, 200, 220, 250, 260, 270, 300, 320, 340, 350, 370, 380, 390, 400, 420, 440,
+                    460, 480, 500, 510, 520, 530, 540, 550, 570, 590, 610, 630, 650, 670, 680, 695,
+                    700, 710, 720, 740, 760, 780, 790, 795, 800, 810, 820, 830, 840, 850, 860, 870,
+                    880, 890, 900, 910, 920, 935, 940, 950, 960, 970, 980, 990, 995, 225, 311, 129];
+
+                //top px's for positioning
+                var topMovement = [5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 130, 140, 170,
+                    180, 200, 220, 250, 260, 270, 300, 320, 340, 350, 370, 380, 390, 400, 420, 440,
+                    460, 480, 500, 510, 520, 530, 540, 550, ];
+
+                //selecting random value from array found on stackoverflow
+                var randTime = timeArray[Math.floor(Math.random() * timeArray.length)];
+                var randLeftMove = leftMovement[Math.floor(Math.random() * leftMovement.length)];
+                var randTopMove = topMovement[Math.floor(Math.random() * topMovement.length)];
+                
+                setTimeout(function () {
+                    if (Math.random() > 0.5) {
+                        document.getElementById("box").style.borderRadius = "40px";
+                    }
+                    else {
+                        document.getElementById("box").style.borderRadius = "0";
+                    }
+
+                    document.getElementById("box").style.top = randTopMove + "px";
+                    document.getElementById("box").style.left = randLeftMove + "px";
+                    document.getElementById("box").style.backgroundColor = getRandomColor();
+                    document.getElementById("box").style.display = "block";
+                    createdTime = Date.now();
+                }, randTime);
+            }
+
+
+            document.getElementById("box").onclick = function () {
+                              
+                clickedTime = Date.now();
+                reactionTime = (clickedTime - createdTime) / 1000;
+                document.getElementById("time").innerHTML = reactionTime;
+                
+                //for best time
+                var highScore = [];
+                highScore.push(reactionTime);
+                highScore.sort();
+                var fastest = highScore[0];
+                document.getElementById("score").innerHTML = fastest;
+                
+                this.style.display = "none";
+                appear();
+            }
+
+            
+                   
+            appear();
+         
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Test your reaction time!</h1>
+    <p><strong>Instructions:</strong> Click the shapes as they appear inside the box to test your reaction time.</p>        
+        <p class="details">Your Time: <span id="time">0</span>s</p>
+        <p class="details">Your Best Time: <span id="score">0</span>s</p>
+    <div id="container">
+        <div id="box">
+
+        </div>
+    </div>
+</body>
+</html>
