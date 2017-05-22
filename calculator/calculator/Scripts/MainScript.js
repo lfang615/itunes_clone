@@ -44,7 +44,7 @@ function divideClick() {
 }
 
 function equalsClick() {
-  var result = txtResult + txtInput;
+  var result = String(txtResult) + String(txtInput);
   txtResult.value = eval(result);
 }
 
