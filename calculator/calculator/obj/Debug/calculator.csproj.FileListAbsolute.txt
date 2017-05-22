@@ -1,0 +1,6 @@
+C:\Users\lfang\Documents\Visual Studio 2013\Projects\calculator\calculator\bin\calculator.dll.config
+C:\Users\lfang\Documents\Visual Studio 2013\Projects\calculator\calculator\bin\calculator.dll
+C:\Users\lfang\Documents\Visual Studio 2013\Projects\calculator\calculator\bin\calculator.pdb
+C:\Users\lfang\Documents\Visual Studio 2013\Projects\calculator\calculator\obj\Debug\calculator.csprojResolveAssemblyReference.cache
+C:\Users\lfang\Documents\Visual Studio 2013\Projects\calculator\calculator\obj\Debug\calculator.dll
+C:\Users\lfang\Documents\Visual Studio 2013\Projects\calculator\calculator\obj\Debug\calculator.pdb
